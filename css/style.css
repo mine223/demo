@@ -20,6 +20,13 @@ li {
     list-style: none;
 }
 
+h2 {
+    font-size: 50px;
+    line-height: 58px;
+    color: #121212;
+    font-weight: 600;
+}
+
 h3 {
     font-size: 44px;
     line-height: 55px;
@@ -288,3 +295,147 @@ h6 {
     background-image: linear-gradient(to right, #535CF1, #A147E4);
 }
 
+/*Services Section*/
+#wrapper {
+    margin: 5rem 7rem 10rem 7rem;
+}
+
+.services {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services h6 {
+    margin-bottom: 50px;
+}
+
+.services .service-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.services .service-content .box {
+    width: 60%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.services .service-content .box .box-one {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.services .service-content .box .box-one .service {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+
+.services .service-content .box .box-one .service .service-icon {
+    width: 60%;
+    height: auto;
+    margin: 0px auto;
+    position: relative
+}
+
+.services .service-content .box .box-one .service .service-icon img {
+    width: 100%
+}
+
+
+.services .service-content .box .box-one .service .service-contents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.services .service-content .box .box-one .service .service-contents .service-title {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+.services .service-content .box .box-one .service .service-contents .service-text {
+    overflow: hidden;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+    display: -webkit-box;
+    text-align: justify;
+}
+
+
+.services .service-content .service-img {
+    width: 40%;
+}
+
+.services .service-content .service-img img {
+    width: 100%;
+}
