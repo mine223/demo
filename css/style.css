@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+/* Common used for the pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* Nav Bar */
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.nav {
+    position: fixed;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: transparent;
+    transition: all .5s ease;
+    z-index: 100;
+}
+
+.nav .navbar-toggle {
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.nav .navbar-toggle .toggler-icon {
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all .3s ease-out 0s;
+}
+
+.nav .menu-bar .menu-items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav .menu-bar .menu-items li {
+    margin: 0 15px;
+}
+
+.nav .menu-bar .menu-items li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .menu-bar .menu-items li a:hover {
+    color: #4F47E4;
+}
+
+.nav .navbar-social {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav .navbar-social span {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #6c6c6c;
+}
+
+.nav .navbar-social ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.nav .navbar-social ul li {
+    margin: 0 7px;
+}
+
+.nav .navbar-social ul li a {
+    color: #6c6c6c;
+    font-size: 22px;
+}
+
+/*Home Section*/
+
+
+.bg {
+    background-image: url('../resources/homebg.jpg');
+    width: 100%;
+    height: 120vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bg a {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    color: #000;
+    z-index: 10;
+}
+
+.bg .overlay {
+    background-image: linear-gradient(rgba(232, 237, 255, .9), rgba(239, 254, 255, .9) 40%, rgba(254, 255, 244, .3) 70%, rgba(255, 255, 255, .12));
+    width: 100%;
+    height: 100%;
+}
+
+.bg .wave-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bg .wave-shape img {
+    width: 100%;
+    display: block;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-content .header-text {
+    font-size: 95px;
+    letter-spacing: 5px;
+}
+
+.home-content h6 {
+    font-size: 50px;
+    color: #1d1d1d;
+}
+
+
+.home-content h3 {
+    margin-top: 22px;
+    font-size: 65px;
+}
+
+.home-content .header-btn {
+    margin-top: 22px;
+}
+
+.home-content .header-btn li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.home-content .header-btn li a.main-btn {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0;
+    line-height: 50px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.home-content .header-btn li a.first-btn {
+    color: #fff;
+}
+
+.home-content .header-btn li a.first-btn:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    z-index: -1;
+    transition: all .3s ease;
+    background-position: right center;
+}
+
+.home-content .header-btn li a.first-btn:hover {
+    color: #535CF1;
+}
+
+.home-content .header-btn li a.first-btn:hover:before {
+    background-image: linear-gradient(to right, #fff, #f8f8f8);
+}
+
+
+.home-content .header-btn li a.second-btn:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+}
+
