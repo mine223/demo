@@ -34,13 +34,6 @@ h3 {
     font-weight: 600;
 }
 
-h6 {
-    font-size: 20px;
-    line-height: 32px;
-    color: #6c6c6c;
-    margin-top: 16px;
-    font-weight: normal;
-}
 
 .main-btn {
     display: inline-block;
@@ -296,18 +289,19 @@ h6 {
 }
 
 /*Services Section*/
-#wrapper {
-    margin: 5rem 7rem 10rem 7rem;
-}
+#wrapper {}
 
-.services {
-    margin-bottom: 30px;
+.services,
+.about {
+    background-color: RGBA(85, 239, 196, .25);
 }
 
 /*Services and Tools Section*/
 .services,
-.tools {
-
+.tools,
+.about,
+.choose {
+    padding: 7rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -325,7 +319,13 @@ h6 {
 }
 
 .services h6,
-.tools h6 {
+.tools h6,
+.about h6,
+.choose h6 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 16px;
+    font-weight: normal;
     margin-bottom: 50px;
 }
 
@@ -336,13 +336,6 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    /*
-    -webkit-flex-direction: row;
--moz-flex-direction: row;
--ms-flex-direction: row;
--o-flex-direction: row;
-flex-direction: row;
-*/
 }
 
 .services .slider .card,
@@ -370,7 +363,9 @@ flex-direction: row;
 }
 
 .services .slider .card .service-content .service-title,
-.tools .slider .card .tool-content .tool-title {
+.tools .slider .card .tool-content .tool-title,
+.about .about-content .about-box .box-one .about-contents .about-title,
+.choose .choose-content .choose-box .box .choose-contents .choose-title {
     font-size: 25px;
     line-height: 26px;
     margin-bottom: 0px;
@@ -384,17 +379,72 @@ flex-direction: row;
     line-height: 20px;
 }
 
-/*
-.services .slider .card .service-content p {
-    text-align: justify;
-}*/
-
 .services .slider .card .service-content p,
-.tools .slider .card .tool-content p {
-    margin: 10px 0;
+.tools .slider .card .tool-content p,
+.about .about-content .about-box .box-one .about-contents p,
+.choose .choose-content .choose-box .box .choose-contents p {
+    margin: 10px;
     overflow: hidden;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 8 !important;
     display: -webkit-box;
     text-align: justify;
+}
+
+
+/*About Section*/
+.about .about-content,
+.choose .choose-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+.about .about-content .about-box,
+.choose .choose-content .choose-box {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about .about-content .about-box .box-one,
+.choose .choose-content .choose-box .box {
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+    justify-content: space-between;
+}
+
+.about .about-content .about-box .box-one .img,
+.choose .choose-content .choose-box .box .img {
+    height: 40%;
+    margin-bottom: 10px;
+}
+
+.about .about-content .about-box .box-one .img i,
+.choose .choose-content .choose-box .box .img i {
+    font-size: 40px;
 }
