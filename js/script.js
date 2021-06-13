@@ -2,7 +2,7 @@ function timedText() {
     'use strict';
     var x = document.getElementById('changeText'),
         index = 0,
-        arry = ['Planning', 'Desinging', 'Development'];
+        arry = ['Desinging', 'Development', 'Planning'];
 
     setInterval(function () {
 
@@ -14,7 +14,6 @@ function timedText() {
 
 
     }, 5000);
-
 
 }
 

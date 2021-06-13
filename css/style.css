@@ -301,6 +301,13 @@ h6 {
 }
 
 .services {
+    margin-bottom: 30px;
+}
+
+/*Services and Tools Section*/
+.services,
+.tools {
+
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -317,125 +324,77 @@ h6 {
     text-align: center;
 }
 
-.services h6 {
+.services h6,
+.tools h6 {
     margin-bottom: 50px;
 }
 
-.services .service-content {
+.services .slider,
+.tools .slider {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    /*
     -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
+-moz-flex-direction: row;
+-ms-flex-direction: row;
+-o-flex-direction: row;
+flex-direction: row;
+*/
 }
 
-.services .service-content .box {
-    width: 60%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
+.services .slider .card,
+.tools .slider .card {
+    flex: 1;
+    margin: 0 10px;
 }
 
-.services .service-content .box .box-one {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px;
-    margin-right: 20px;
-}
-
-.services .service-content .box .box-one .service {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    justify-content: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-}
-
-
-.services .service-content .box .box-one .service .service-icon {
-    width: 60%;
-    height: auto;
-    margin: 0px auto;
-    position: relative
-}
-
-.services .service-content .box .box-one .service .service-icon img {
+.services .slider .card .img,
+.tools .slider .card .img {
+    height: 200px;
     width: 100%
 }
 
-
-.services .service-content .box .box-one .service .service-contents {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    justify-content: flex-start;
-    -ms-align-items: flex-start;
-    align-items: flex-start;
+.services .slider .card .img img,
+.tools .slider .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
 }
 
-.services .service-content .box .box-one .service .service-contents .service-title {
-    font-size: 19px;
+.services .slider .card .service-content,
+.tools .slider .card .tool-content {
+    padding: 10px 20px;
+}
+
+.services .slider .card .service-content .service-title,
+.tools .slider .card .tool-content .tool-title {
+    font-size: 25px;
     line-height: 26px;
     margin-bottom: 0px;
 }
 
-.services .service-content .box .box-one .service .service-contents .service-text {
+
+.tools .slider .card .tool-content .tool-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+/*
+.services .slider .card .service-content p {
+    text-align: justify;
+}*/
+
+.services .slider .card .service-content p,
+.tools .slider .card .tool-content p {
+    margin: 10px 0;
     overflow: hidden;
     -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 3 !important;
+    -webkit-line-clamp: 8 !important;
     display: -webkit-box;
     text-align: justify;
-}
-
-
-.services .service-content .service-img {
-    width: 40%;
-}
-
-.services .service-content .service-img img {
-    width: 100%;
 }
