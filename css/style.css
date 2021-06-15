@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rajdhani', sans-serif;
 }
@@ -502,13 +506,7 @@ h3 {
     padding-left: 15px;
 }
 
-@media (min-width: 992px) {
-    .contact .contact-container .contact-row .contact-column {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
+
 
 .contact .contact-container .contact-row .contact-column .contact-row .box {
     -ms-flex: 0 0 100%;
@@ -595,6 +593,7 @@ h3 {
     font-size: 16px;
     outline: none;
     padding-top: 15px;
+    margin-bottom: 20px;
 }
 
 
@@ -685,4 +684,253 @@ footer .second-row .frow li a {
 .copyright p {
     text-align: center;
     color: #fff;
+}
+
+/*Responsiveness*/
+
+@media (min-width: 992px) {
+    .contact .contact-container .contact-row .contact-column {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 946px) {
+
+    .bg {
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .nav {
+        padding: 1rem 3rem;
+    }
+
+    .nav .navbar-social {
+        display: none;
+    }
+
+    .home-content {
+        width: 60%;
+    }
+
+    .home-content .header-text {
+        font-size: 50px;
+    }
+
+    .home-content h6 {
+        font-size: 30px;
+        color: #1d1d1d;
+    }
+
+
+    .home-content h3 {
+        margin-top: 0;
+        font-size: 35px;
+    }
+
+    .home-content .header-btn {
+        margin-top: 0;
+    }
+
+    /*Service & Tools Section*/
+    .services,
+    .tools,
+    .about,
+    .choose,
+    .contact,
+    .email {
+        padding: 3rem;
+    }
+
+    .services h6,
+    .tools h6,
+    .about h6,
+    .choose h6,
+    .contact h6 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .services .slider,
+    .tools .slider {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+
+    .services .slider .card,
+    .tools .slider .card {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .services .slider .card .img,
+    .tools .slider .card .img {
+        height: 200px;
+        width: 100%
+    }
+
+    .services .slider .card .img img,
+    .tools .slider .card .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+
+    .services .slider .card .service-content,
+    .tools .slider .card .tool-content {
+        padding: 10px 20px;
+    }
+
+    .services .slider .card .service-content .service-title,
+    .tools .slider .card .tool-content .tool-title,
+    .about .about-content .about-box .box-one .about-contents .about-title,
+    .choose .choose-content .choose-box .box .choose-contents .choose-title,
+    .contact .contact-container .contact-row .contact-column .box .content-box .contact-contents .contact-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+    .tools .slider .card .tool-content .tool-subtitle {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    /*Contact Section*/
+    .contact .contact-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact .contact-container .contact-row,
+    .contact .contact-container .contact-row .contact-column .contact-row {
+        margin: 0;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+
+    /*Email Section*/
+    .email .form {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 774px) {
+    .nav {
+
+        padding: .7rem 1rem;
+    }
+
+    .nav .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 100
+    }
+
+    .nav .menu-bar {
+        position: fixed;
+        top: 55px;
+        right: -360px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256, .9);
+        transition: all .5s ease;
+    }
+
+    .nav .menu-bar .menu-items {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        justify-content: flex-start;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+
+    .nav .menu-bar .menu-items li {
+        margin: 2rem 30px;
+    }
+
+    footer {
+        padding: 4rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    .home-content .header-btn li {
+        display: block;
+        margin: 10px 10px 0 0;
+    }
+
+    .about .about-content .about-box,
+    .choose .choose-content .choose-box {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .about .about-content .about-box .box-one,
+    .choose .choose-content .choose-box .box {
+        margin: 20px;
+    }
+
+    .email .form .email-row {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .email .form .email-row input {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .email .form textarea {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 4rem 2rem;
+    }
+
+    footer .second-row {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+
+    footer .second-row .frow {
+        margin: 10px;
+    }
 }
