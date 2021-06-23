@@ -56,6 +56,43 @@ h3 {
 }
 
 
+.transition-1 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background: #403d3d;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+.transition-1.is-active {
+    left: 0;
+}
+
+.transition-2 {
+    position: fixed;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background: #403d3d;
+    -webkit-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+}
+
+.transition-2.is-active {
+    top: 0;
+}
+
+
 /* Nav Bar */
 
 .logo img {
@@ -313,7 +350,16 @@ h3 {
 .services,
 .about,
 .contact {
-    background-color: RGBA(85, 239, 196, .25);
+    /*    background-color: RGBA(85, 239, 196, .25);*/
+    height: 100vh;
+    background: linear-gradient(to top left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
+}
+
+.tools,
+.choose,
+.email {
+    height: 100vh;
+    background: linear-gradient(to bottom left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
 }
 
 /*Services and Tools Section*/

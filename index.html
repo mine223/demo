@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dcodinfo - Our Passion, Your Business</title>
 
+    <link rel="icon" href="resources/logo.png">
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -18,37 +20,42 @@
 
 <body>
 
-    <div class="nav">
-        <a href="#" class="logo">
-            <img src="resources/logo.png" alt="">
-        </a>
+    <div class="transition transition-1 is-active"></div>
 
-        <div class="navbar-toggle" type="button" id="bar">
-            <span class="toggler-icon"></span>
-            <span class="toggler-icon"></span>
-            <span class="toggler-icon"></span>
+    <nav>
+        <div class="nav">
+            <a href="#" class="logo">
+                <img src="resources/logo.png" alt="">
+            </a>
+
+            <div class="navbar-toggle" type="button" id="bar">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </div>
+
+            <div class="menu-bar" id="menu-bar">
+                <ul class="menu-items">
+                    <li><a class="link" href="#home">Home</a></li>
+                    <li><a class="link" href="#services">Services</a></li>
+                    <li><a class="link" href="#tools">Development Tools</a></li>
+                    <li><a class="link" href="#about">About Us</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
+                    <li><a class="link" href="pages/team.html">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-social">
+                <span>FOLLOW US</span>
+                <ul>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
         </div>
-
-        <div class="menu-bar" id="menu-bar">
-            <ul class="menu-items">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#tools">Development Tools</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="navbar-social">
-            <span>FOLLOW US</span>
-            <ul>
-                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-
-    </div>
+    </nav>
 
 
     <section id="home">
@@ -372,23 +379,23 @@
             <div class="frow">
                 <h6 class="footer-title">Company</h6>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="">Career</a></li>
+                    <li><a class="link" href="#about">About</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
+                    <li><a class="link" href="">Career</a></li>
                 </ul>
             </div>
             <div class="frow">
                 <h6 class="footer-title">Our Works and Our Teams</h6>
                 <ul>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Our Teams</a></li>
+                    <li><a class="link" href="">Portfolio</a></li>
+                    <li><a class="link" href="pages/team.html">Our Teams</a></li>
                 </ul>
             </div>
             <div class="frow">
                 <h6 class="footer-title">Help &amp; Support</h6>
                 <ul>
-                    <li><a href="">Support Center</a></li>
-                    <li><a href="">Terms &amp; Conditions</a></li>
+                    <li><a class="link" href="">Support Center</a></li>
+                    <li><a class="link" href="">Terms &amp; Conditions</a></li>
                 </ul>
             </div>
         </div>
@@ -401,4 +408,5 @@
 
 
     <script src="js/script.js" defer></script>
+    <script src="js/transition.js" defer></script>
 </body></html>
