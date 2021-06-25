@@ -71,3 +71,4 @@ bar.onclick = function () {
         menu.style.right = "-360px";
     }
 }
+

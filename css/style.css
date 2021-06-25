@@ -64,7 +64,7 @@ h3 {
     right: 0;
     bottom: 0;
     z-index: 101;
-    background: #403d3d;
+    background: #fff;
     -webkit-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
@@ -82,7 +82,7 @@ h3 {
     right: 0;
     bottom: 0;
     z-index: 101;
-    background: #403d3d;
+    background: #fff;
     -webkit-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
@@ -350,15 +350,12 @@ h3 {
 .services,
 .about,
 .contact {
-    /*    background-color: RGBA(85, 239, 196, .25);*/
-    height: 100vh;
     background: linear-gradient(to top left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
 }
 
 .tools,
 .choose,
 .email {
-    height: 100vh;
     background: linear-gradient(to bottom left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
 }
 
@@ -369,6 +366,7 @@ h3 {
 .choose,
 .contact,
 .email {
+	height: auto;
     padding: 7rem;
     display: -webkit-flex;
     display: -moz-flex;
