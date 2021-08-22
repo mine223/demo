@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Team - Dcodinfo</title>
+    <title>Team - Code Info</title>
 
-    <link rel="icon" href="../resources/logo.png">
+    <link rel="icon" href="../resources/logo.jpg">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
@@ -25,7 +25,7 @@
 
     <div class="nav">
         <a href="#" class="logo">
-            <img src="../resources/logo.png" alt="">
+            <img src="../resources/logo.jpg" alt="">
         </a>
 
         <div class="navbar-toggle" type="button" id="bar">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="content">
                     <div class="content-box">
-                        <h3>Sabin Nakarmi <br><span>Full Stack Developer</span></h3>
+                        <h3>Sabin Nakarmi <br><span>Full Stack Developer | Web and App Developer</span></h3>
                         <ul class="social">
                             <li style="--i:2;">
 
@@ -85,7 +85,7 @@
 
             <div class="card">
                 <div class="image-box">
-                    <img src="../resources/logo.png" alt="">
+                    <img src="../resources/logo.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="content-box">
@@ -104,11 +104,11 @@
 
             <div class="card">
                 <div class="image-box">
-                    <img src="../resources/logo.png" alt="">
+                    <img src="../resources/logo.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="content-box">
-                        <h3>Cristee Sharma<br><span>Full Stack Developer</span></h3>
+                        <h3>Hemanta Sharma<br><span>Web and App Developer</span></h3>
                         <ul class="social">
                             <li style="--i:2;">
 
@@ -123,7 +123,7 @@
 
             <div class="card">
                 <div class="image-box">
-                    <img src="../resources/logo.png" alt="">
+                    <img src="../resources/logo.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="content-box">
@@ -140,9 +140,10 @@
                 </div>
             </div>
 
+            <!--
             <div class="card">
                 <div class="image-box">
-                    <img src="../resources/logo.png" alt="">
+                    <img src="../resources/logo.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="content-box">
@@ -158,10 +159,11 @@
                     </div>
                 </div>
             </div>
+-->
 
             <div class="card">
                 <div class="image-box">
-                    <img src="../resources/logo.png" alt="">
+                    <img src="../resources/logo.jpg" alt="">
                 </div>
                 <div class="content">
                     <div class="content-box">
@@ -183,7 +185,7 @@
     <footer>
         <div class="row">
             <a href="#" class="logo">
-                <img src="../resources/logo.png" alt="">
+                <img src="../resources/logo.jpg" alt="">
             </a>
             <ul>
                 <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -198,13 +200,13 @@
                 <ul>
                     <li><a class="link" href="../index.html#about">About</a></li>
                     <li><a class="link" href="../index.html#contact">Contact</a></li>
-                    <li><a class="link" href="">Career</a></li>
+                    <!--                    <li><a class="link" href="">Career</a></li>-->
                 </ul>
             </div>
             <div class="frow">
                 <h6 class="footer-title">Our Works and Our Teams</h6>
                 <ul>
-                    <li><a class="link" href="">Portfolio</a></li>
+                    <!--                    <li><a class="link" href="">Portfolio</a></li>-->
                     <li><a href="#">Our Teams</a></li>
                 </ul>
             </div>
@@ -212,7 +214,7 @@
                 <h6 class="footer-title">Help &amp; Support</h6>
                 <ul>
                     <li><a class="link" href="">Support Center</a></li>
-                    <li><a class="link" href="">Terms &amp; Conditions</a></li>
+                    <li><a class="link" href="tc.html">Terms &amp; Conditions</a></li>
                 </ul>
             </div>
         </div>
@@ -220,20 +222,24 @@
     </footer>
 
     <div class="copyright">
-        <p>Copyright&copy; reserved - 2021 by Dcodinfo</p>
+        <p>Copyright&copy; reserved - 2021 by Code Info</p>
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
     <script src="../js/transition.js"></script>
-	<script>
-	//Hover for Mobile Version
-const cardlist = document.querySelectorAll('.card');
-var y = window.matchMedia("(max-width: 541px)");
+    <script>
+        //Hover for Mobile Version
+        const cardlist = document.querySelectorAll('.card');
+        var y = window.matchMedia("(max-width: 541px)");
 
-for(let i = 0; i<cardlist.length; i++) {
-	if(y.matches) {
-		cardlist[i].classList.add('active');
-	}
-}
-</script>
-</body></html>
+        for (let i = 0; i < cardlist.length; i++) {
+            if (y.matches) {
+                cardlist[i].classList.add('active');
+            }
+        }
+
+    </script>
+</body>
+
+</html>

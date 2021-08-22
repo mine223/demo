@@ -49,15 +49,6 @@ if (x.matches && !(y.matches)) {
     });
 }
 
-//Nav bar Scrolling
-$(function () {
-    'use strict';
-    $(document).scroll(function () {
-        var $nav = $('.nav');
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-});
-
 
 var bar = document.getElementById('bar');
 var menu = document.getElementById('menu-bar');
@@ -71,4 +62,3 @@ bar.onclick = function () {
         menu.style.right = "-360px";
     }
 }
-

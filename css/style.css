@@ -349,13 +349,15 @@ h3 {
 /*Services Section*/
 .services,
 .about,
-.contact {
+.contact,
+.tc {
     background: linear-gradient(to top left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
 }
 
 .tools,
 .choose,
-.email {
+.email,
+.tc-2 {
     background: linear-gradient(to bottom left, RGBA(85, 239, 196, .25) 50%, #fff 50%);
 }
 
@@ -365,8 +367,10 @@ h3 {
 .about,
 .choose,
 .contact,
-.email {
-	height: auto;
+.email,
+.tc,
+.tc-2 {
+    height: auto;
     padding: 7rem;
     display: -webkit-flex;
     display: -moz-flex;
@@ -389,6 +393,7 @@ h3 {
 .about h6,
 .choose h6,
 .contact h6 {
+
     font-size: 20px;
     line-height: 32px;
     margin-top: 16px;
@@ -977,4 +982,24 @@ footer .second-row .frow li a {
     footer .second-row .frow {
         margin: 10px;
     }
+}
+
+
+/*T&C*/
+.tc,
+.tc-2 {
+    justify-content: space-between;
+    -ms-align-items: start;
+    align-items: start;
+    text-align: justify;
+    padding-bottom: 0;
+    padding-top: 8rem;
+}
+
+.tc-2 {
+    padding-top: 0;
+}
+
+.tc-list {
+    list-style: circle;
 }
