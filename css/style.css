@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+:root {
+    scrollbar-width: thin !important;
+}
+
 
 /* Common used for the pages */
 * {
@@ -36,6 +40,17 @@ h3 {
     line-height: 55px;
     color: #121212;
     font-weight: 600;
+}
+
+form {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 
@@ -96,8 +111,8 @@ h3 {
 /* Nav Bar */
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 .nav {
@@ -116,7 +131,7 @@ h3 {
     -ms-align-items: center;
     align-items: center;
     width: 100%;
-    padding: 1rem 6.5rem;
+    padding: 1px 6.5rem;
     background-color: transparent;
     transition: all .5s ease;
     z-index: 100;
@@ -297,7 +312,7 @@ h3 {
 
 .home-content .header-btn li a.main-btn,
 .service-content a.main-btn,
-.email .form a.main-btn {
+.email .form input.main-btn {
     border-radius: 50px;
     overflow: hidden;
     background-color: #fff;
@@ -308,14 +323,12 @@ h3 {
 }
 
 .home-content .header-btn li a.first-btn,
-.service-content a.read-btn,
-.email .form a.email-btn {
+.service-content a.read-btn {
     color: #fff;
 }
 
 .home-content .header-btn li a.first-btn:before,
-.service-content a.read-btn:before,
-.email .form a.email-btn:before {
+.service-content a.read-btn:before {
     position: absolute;
     content: "";
     top: 0;
@@ -330,13 +343,13 @@ h3 {
 
 .home-content .header-btn li a.first-btn:hover,
 .service-content a.read-btn:hover,
-.email .form a.email-btn:hover {
+.email .form input.email-btn:hover {
     color: #535CF1;
 }
 
 .home-content .header-btn li a.first-btn:hover:before,
 .service-content a.read-btn:hover:before,
-.email .form a.email-btn:hover:before {
+.email .form input.email-btn:hover:before {
     background-image: linear-gradient(to right, #fff, #f8f8f8);
 }
 
@@ -371,7 +384,7 @@ h3 {
 .tc,
 .tc-2 {
     height: auto;
-    padding: 7rem;
+    padding: 6rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1001,5 +1014,21 @@ footer .second-row .frow li a {
 }
 
 .tc-list {
-    list-style: circle;
+    list-style: decimal;
+}
+
+/*Custom Scroll Bar*/
+::-webkit-scrollbar,
+    {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }

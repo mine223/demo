@@ -91,7 +91,7 @@
                 <div class="service-content">
                     <h4 class="service-title">Web Development</h4>
                     <p>Our team is here to develop simple to complex websites based on the amount you are willing to spend</p>
-                    <a href="" class="main-btn read-btn">Read More >></a>
+                    <!--                    <a href="" class="main-btn read-btn">Read More >></a>-->
                 </div>
             </div>
             <div class="card">
@@ -101,7 +101,7 @@
                 <div class="service-content">
                     <h4 class="service-title">Mobile App Development</h4>
                     <p>We create mobile applications for smartphones and tablets. Personal digital assistants, business digital assistants, and mobile phones are examples. For better IT solutions, we can create bespoke apps for your company. Mobile applications are equally vital for multi-purpose transactions as they are for safe transactions. The need for innovative apps for users is met by the business as a whole. </p>
-                    <a href="" class="main-btn read-btn">Read More >></a>
+                    <a href="pages/flutter.html" class="main-btn read-btn">Read More >></a>
                 </div>
             </div>
             <div class="card">
@@ -111,7 +111,7 @@
                 <div class="service-content">
                     <h4 class="service-title">Web App Development using Django</h4>
                     <p>Our team is here to develop simple to complex web application based on the amount you are willing to spend</p>
-                    <a href="" class="main-btn read-btn">Read More >></a>
+                    <a href="pages/django.html" class="main-btn read-btn">Read More >></a>
                 </div>
             </div>
             <div class="card">
@@ -121,7 +121,7 @@
                 <div class="service-content">
                     <h4 class="service-title">Web App Development using Flask</h4>
                     <p>Our team is here to develop simple to complex web application based on the amount you are willing to spend</p>
-                    <a href="" class="main-btn read-btn">Read More >></a>
+                    <a href="pages/flask.html" class="main-btn read-btn">Read More >></a>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
 
             <div class="card">
                 <div class="img">
-                    <img src="resources/django.jpeg" alt="">
+                    <img src="resources/django.png" alt="">
                 </div>
                 <div class="tool-content">
                     <h4 class="tool-title">Django</h4>
@@ -192,7 +192,9 @@
                 <div class="tool-content">
                     <h4 class="tool-title">Flask</h4>
                     <div class="tool-subtitle">Python Web Framework</div>
-                    <p>Django is a Python web framework for quick development, flexible, sustainable, clean design, and website security. A web application framework is a collection of all the components needed to create an application.</p>
+                    <p>Flask is a Python-based microweb framework.
+                        It is referred to as a microframework because it does not necessitate the usage of any specific tools or libraries.
+                        It doesn't have a database abstraction layer, form validation, or any other components that rely on third-party libraries to do typical tasks. </p>
                 </div>
             </div>
             <div class="card">
@@ -320,7 +322,7 @@
                                     </div>
                                     <div class="contact-contents">
                                         <div class="contact-title">For General Information and Enquiry</div>
-                                        <p>info@dcodinfo.com</p>
+                                        <p><a href="mailto:dcodinfo@mail.com">dcodinfo@mail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +338,8 @@
                                     </div>
                                     <div class="contact-contents">
                                         <div class="contact-title">For Customer Support</div>
-                                        <p>support@dcodinfo.com</p>
+
+                                        <p><a href="mailto:dcodinfo@mail.com">dcodinfo@mail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -348,18 +351,20 @@
         <div class="email">
             <h6>Send Message</h6>
             <h2>Drop Us an email</h2>
-            <div class="form">
-                <div class="email-row">
-                    <input type="text" placeholder="Name" name="">
-                    <input type="text" placeholder="Email" name="">
+            <form action="mailto:dcodinfo@mail.com" method="post" enctype="text/plain">
+                <div class="form">
+                    <div class="email-row">
+                        <input type="text" placeholder="Name" name="">
+                        <input type="text" placeholder="Email" name="">
+                    </div>
+                    <div class="email-row">
+                        <input type="text" placeholder="Subject" name="">
+                        <input type="text" placeholder="Phone" name="">
+                    </div>
+                    <textarea placeholder="Message" cols="100" rows="5"></textarea>
+                    <input type="submit" value="Submit" class="main-btn email-btn">
                 </div>
-                <div class="email-row">
-                    <input type="text" placeholder="Subjec" name="">
-                    <input type="text" placeholder="Phone" name="">
-                </div>
-                <textarea placeholder="Message" cols="100" rows="5"></textarea>
-                <a href="" class="main-btn email-btn">Submit</a>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -410,6 +415,4 @@
     <script src="js/script.js" defer></script>
     <script src="js/navbar.js" defer></script>
     <script src="js/transition.js" defer></script>
-</body>
-
-</html>
+</body></html>
